@@ -1,0 +1,62 @@
+{
+  "title": "Pharmaceutical Drug Spending by countries",
+  "name": "pharmaceutical-drug-spending",
+  "sources": [
+    {
+      "title": "Pharmaceutical Drug Spending from Organisation for Economic Cooperation and Development",
+      "path": "https://stats.oecd.org/sdmx-json/data/DP_LIVE/.PHARMAEXP.../OECD?contentType=csv&detail=code&separator=comma&csv-lang=en"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "odc-pddl",
+      "title": "Open Data Commons Public Domain Dedication and Licence (PDDL)",
+      "path": "http://opendatacommons.org/licenses/pddl/"
+    }
+  ],
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "data",
+      "format": "csv",
+      "encoding": "utf-8",
+      "mediatype": "text/csv",
+      "path": "data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "LOCATION",
+            "type": "string",
+            "description": "Country code"
+          },
+          {
+            "name": "TIME",
+            "type": "year",
+            "description": "Date in the form of %Y"
+          },
+          {
+            "name": "PC_HEALTHXP",
+            "type": "number",
+            "description": "% of Health spending"
+          },
+          {
+            "name": "PC_GDP",
+            "type": "number",
+            "description": "% of GDP"
+          },
+          {
+            "name": "USD_CAP",
+            "type": "number",
+            "description": "in USD per capita (using economy-wide PPPs)"
+          },
+          {
+            "name": "TOTAL_SPEND",
+            "type": "number",
+            "description": "Total spending in millions"
+          }
+        ]
+      }
+    }
+  ],
+  "collection": "healthcare-data"
+}
